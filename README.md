@@ -20,41 +20,37 @@
 - Success rate of hitting targets → percentage of daily/weekly goals achieved.
 
 ## Prepare Stage Summary (Bellabeat – Leaf Product)
-# Dataset Overview
-# Scope & Limitations
+### Dataset Overview
+This dataset is from [Fitbit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit), a public domain dataset available on Kaggle. This dataset contains personal fitness tracker data from 30 consented fitbit users. I will import this dataset into Bigquery where I will clean, process, and analyze the data.
+
+<img width="500" alt="Bellabeat ERD" src="https://github.com/user-attachments/assets/65fe3eaa-cda5-4d86-9605-68ad8cd648f7" />
+
+### Scope & Limitations
 - The dataset comes from 33 users. The sample size is not large enough to represent actual Fitbit users.
 - The dataset contains data collected during a period of 2 months in 2016. This is outdated and the period is too short to recognize trends.
 - There are limited metrics available in the dataset, for example sleep time, activity minutes, steps, and heart rate.
 - The dataset contains no demographic information (e.g., sex, age). This data could be useful for understanding customers in each segment.
 - Our scope of analysis can only be a prototype to find lifestyle routines that we assume come from general individuals.
 
-# Dataset Classification
+### Dataset Classification
 - Datasets come in 2 periods, 3/12/2016 - 4/11/2016 and 4/12/2016 - 5/12/2016 so we need to combine them into one for simpler work.
 - Core datasets would be DailyActivities, SleepDay which will be used to analyze daily steps, activity minutes, calories, and hours asleep.
 - Secondary datasets would be hourly data which will be used to identify patterns within a day
 - WeightInfo is used for exploratory use due to limited records.
 
-# Data Quality Considerations
+### Data Quality Considerations
 - Duplicates: Remove exact duplicates in daily tables. If the same ID/date has different values (e.g., calories), use the average.
 - Missing values: Drop missing rows if the dataset is sufficiently large; otherwise, keep to avoid losing user data.
 - Outliers: Keep outliers, as extreme values may reflect real behavior (e.g., long cardio sessions).
 
-# Key Insights for Analysis Plan
-1. Focus on overall user patterns due to missing demographic data (sex, age) and small sample size.
-2. Use line graphs for weekly/daily trends, bar/pie charts for segmentation, and line charts with target lines for personalized goal tracking.
-3. Storyline: Identify routines → classify as healthy/unhealthy → provide tailored action (reminders or personalized goals).
-
 ## Act Stage – Final Recommendations
 
-# Business Task Reminder
-The objective of this project was to analyze user sleep and activity routines from Fitbit data to provide insights for BellaBeat’s product development (personalized goal setting) and marketing team (campaign strategies that increase engagement).
-
-![Dashboard](/Users Trend and Insight.png)
+<img width="2000" height="1600" alt="Users Trend and Insight" src="https://github.com/user-attachments/assets/1a908094-3566-45ae-9a1b-830bc9f47cad" />
 
 🔗 [Explore the interactive version on Tableau Public](https://public.tableau.com/views/GoogleDataAnalyticsCapstoneCasestudyBellabeat/PersonalizedView?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
-# Key Insights & Recommendation
+### Key Insights & Recommendation
 1. Weekly Patterns – Peak Activity on Mon, Wed, Sat
 - Users are most active on these days and sleep better on Wed & Sat.
 - **Recommendation:** Schedule in-app challenges and push notifications aligned with these peak days, reinforcing healthy momentum when users are already more engaged.
