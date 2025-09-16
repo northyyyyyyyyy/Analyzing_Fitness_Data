@@ -51,18 +51,18 @@ This dataset is from [Fitbit Fitness Tracker Data](https://www.kaggle.com/datase
 
 
 ### Key Insights & Recommendation
-1. Weekly Patterns – Peak Activity on Mon, Wed, Sat
+1. **Weekly Patterns – Peak Activity on Mon, Wed, Sat**
 - Users are most active on these days and sleep better on Wed & Sat.
 - **Recommendation:** Schedule in-app challenges and push notifications aligned with these peak days, reinforcing healthy momentum when users are already more engaged.
-2. Calories Driven by Very Active Minutes
+2. **Calories Driven by Very Active Minutes**
 - Calorie burn correlates strongly with very active minutes compared to other active levels. 
 - **Recommendation:** Introduce intensity-based goals (e.g., “20 min active activity”) to help users achieve better results and feel progress faster than with step-only goals. We could also provide support with follow-along workout videos or partnership with gyms encouraging users to participate in HIIT classes.
-3. Daily Routine Patterns – Noon & Evening Activity Spikes
+3. **Daily Routine Patterns – Noon & Evening Activity Spikes**
 - Users walk more during noon and after 6 pm which can be inferred to be lunch break and after work. 
 - **Recommendation:** Send smart reminders during these windows (e.g., “Take a 5-min walk now to hit today’s goal”), aligning with natural routines rather than forcing new ones.
-4. Sedentary Lifestyle – 80% of Time Inactive
+4. **Sedentary Lifestyle – 80% of Time Inactive**
 - Most users spend the majority of their day sedentary. There are gaps where we can encourage users to be more active.
 - **Recommendation:** Launch a “Break the Sedentary Cycle” campaign rewarding users for reducing long sitting periods (e.g., badges, loyalty points, or wellness gift rewards).
-5. Lack of weight information 
+5. **Lack of weight information**
 - Weight and BMI data can unlock highly personalized user goals. For example, an overweight user may benefit from weight-loss targets, while a normal-weight user may focus on performance goals such as preparing for a marathon.
 - **Recommendation:** Require demographic details (e.g., age, sex, weight) during registration. Use these attributes to tailor goal-setting and connect users with similar profiles in a brand community.This not only increases personalization and motivation but also strengthens BellaBeat’s brand loyalty and supports organic growth through community referrals.
